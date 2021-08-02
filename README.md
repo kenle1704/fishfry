@@ -3,8 +3,8 @@ This Backend Code is builed base on Django and deployed in cloud env ( aws ) usi
 Deploy
 1. make sure you have python installed in your env
 2. make sure you have apache installed in your env
-3. clone proejct to your env 
-4. run "python3 -m venv env" in your project folder to create virtual env 
+3. clone proejct to your env ( you have have an issue to download directly from git clone, you may want to just download by zip file ) 
+4. run "python3 -m venv env" in your project folder to create virtual env ( this only available in python3 ) 
 5. run "source env/bin/activate" to activate env 
 6. you can just run "python -m pip install -r requirements.txt' since it alreayd include dependend module for django project 
 7. remove package-lock.json, db.sqlite3 to start clean or you can just use the database 
