@@ -14,6 +14,7 @@ Deploy
 11. make sure your site folder have apache user and group access permission
 12. run "apt-get install python3-pip apache2 libapache2-mod-wsgi-py3" for install wsgi 
 13. run "a2enmod wsgi" to enable wsgi mod
+14. make sure you allow port 8080 to inbound rule to your env 
 
 <VirtualHost *:8080>
         # The ServerName directive sets the request scheme, hostname and port that
