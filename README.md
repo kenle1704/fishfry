@@ -1,5 +1,5 @@
 # fishfry
-This Backend Code is builed base on Django and deployed in cloud env ( aws ) using apache2 , database sqlite is set up in project but we can have its own instance if needed 
+This Backend Code is builed base on Django and deployed in cloud env ( aws ), os: ubuntu ( aws will have some version issue with sqlite ) , apache2 , database sqlite is set up in project but we can have its own instance if needed 
 Deploy
 1. make sure you have python installed in your env
 2. make sure you have apache installed in your env
@@ -8,9 +8,10 @@ Deploy
 5. run "source env/bin/activate" to activate env 
 6. you can just run "python -m pip install -r requirements.txt' since it alreayd include dependend module for django project 
 7. remove package-lock.json, db.sqlite3 to start clean or you can just use the database 
-8. run "./manage.py migrate" to regenerate database ( you can review initial database creation and data in apps/migration/ 
+8. run "./manage.py migrate" to regenerate database ( you can review initial database creation and data in apps/migration/ )
 9. run "python manage.py collectstatic" to generate staic file to the root static folder ( indicate in settings.py ) 
 10. set up apache2 site and pointing to your project wsgi
+11. make sure your site folder have apache user and group access permission
 
 <VirtualHost *:8080>
         # The ServerName directive sets the request scheme, hostname and port that
